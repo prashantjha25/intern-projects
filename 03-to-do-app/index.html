@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            To do App
+        </header>
+        <section>
+            <!-- task input form -->
+            <div>
+                <form action="#" method="post" id="taskForm"> 
+                    <div>
+                        <label for="taskId">Enter Your Task</label>
+                        <input type="text" name="task" id="taskId" onchange="return check()"/>
+                    </div>
+                    <div>
+                        <input type="submit" id="taskSubmitButtonId"/>
+                        <input type="reset" />
+                    </div>
+                </form>
+            </div>
+            <!-- list of tasks -->
+            <div>
+                <!-- pending tasks list -->
+                <div>Your pending tasks</div> 
+                <div>
+                    <ul id="pendingtaskId">
+                        <!-- pending tasks goes here         -->
+                    </ul>
+                </div>
+                <!-- pending tasks list -->
+                <div>Your completed tasks</div> 
+                <div>
+                    <!-- completed tasks list -->
+                    <ul id="completedtaskId">
+                        <!-- completed tasks goes here -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
