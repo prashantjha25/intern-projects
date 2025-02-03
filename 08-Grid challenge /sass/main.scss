@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    border-box: border-box;
+    box-sizing: border-box;
   }
   .container{
     max-width:50%;
@@ -11,9 +11,6 @@
     grid-template-columns:repeat(4, 1fr);
     gap: 10px 20px;
     
-    & > *{
-          
-    }
     .items--1{
       height:100px;
       grid-column: 1 / -1;
